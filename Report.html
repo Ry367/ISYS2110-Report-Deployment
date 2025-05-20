@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.7: nav.html -->
+<!-- Images as link anchors. -->
+<html>
+<head>
+    <meta charset = "utf-8">
+    <title>Data Dashboard</title>
+	<link rel="stylesheet" href="Report.css">
+    <script src="ReportDashboard.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+      
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand"></div>
+            <ul class="sidebar-menu">
+                <li><a href="#"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+                <li><a href="#"><i class="far fa-calendar"></i> Calendar</a></li>
+                <li><a href="#"><i class="fas fa-calendar-day"></i> Events</a></li>
+                <li><a href="#"><i class="fas fa-box"></i> Inventory</a></li>
+                <li><a href="#" class="active"><i class="fas fa-file-alt"></i> Reports</a></li>
+                <li><a href="#"><i class="far fa-envelope"></i> Messages</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+            <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Log Out</button>
+        </aside>
+  
+        <!-- Main Content -->
+        <div class="content">
+            <header class="report-header">
+              <h1>Report</h1>
+              <hr class="report-divider">
+            </header>
+            
+            <section class="summary">
+                Until May 2025, <span>253</span> events have been successfully held!
+            </section>
+        
+    
+        
+            <main class="dashboardContent">
+                <section class="pie">
+                    <h4>See which resource is the most frequently used...</h4>
+                    <img src="Pie chart RD.png" alt="Pie chart for Resource Usage">
+                </section>
+        
+            
+                <section class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Event Type</th>
+                                <th>Amount</th>
+                                <th>Successful Rate</th>
+                                <th>Resource Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    <button onclick="loadData2024()">View Resource Usage in 2024</button>
+                    <button onclick="loadData2025()">View Resource Usage in 2025</button>    
+                </section>
+            </main>
+            
+        
+        
+        
+            <footer>
+                <p>Click <a href="Detailed_Report2.html">here</a> to find a specific report.</p>
+            </footer>
+        </div>
+      
+  
+    </div>
+  </body>
